@@ -20,6 +20,7 @@ import Faq from "../components/Faq";
 import NewsletterForm from "../components/NewsletterForm";
 import { BiteDivider, Pepite } from "../components/Bites";
 import { CookieMark } from "../components/Logo";
+import HeroCookie from "../components/HeroCookie";
 import { home, getProduct, toppings } from "../mock/data";
 import { fmt } from "../utils";
 
@@ -129,16 +130,17 @@ export default function Home() {
           <div className="relative mobile:mt-2">
             <div aria-hidden="true" className="absolute -right-6 -top-10 h-64 w-64 rounded-full bg-sable" />
             <div aria-hidden="true" className="absolute -bottom-8 -left-10 h-40 w-40 rounded-full bg-sable/70" />
-            <div className="bite-tr-lg relative overflow-hidden rounded-blob shadow-card">
-              <img
-                src={h.hero.image}
-                alt={h.hero.imageAlt}
-                className="aspect-[4/5] w-full object-cover mobile:aspect-square"
-              />
-            </div>
+            <HeroCookie />
             <span className="absolute -bottom-10 -left-8 z-10 flex h-32 w-32 items-center justify-center rounded-full bg-offwhite shadow-card mobile:-bottom-8 mobile:-left-4 mobile:h-24 mobile:w-24">
               <RotatingStamp />
               <CookieMark className="relative h-10 w-10 mobile:h-7 mobile:w-7" />
+            </span>
+            <span className="absolute -bottom-4 right-2 z-10 h-28 w-28 overflow-hidden rounded-full border-8 border-offwhite shadow-card mobile:-bottom-2 mobile:h-20 mobile:w-20 mobile:border-4">
+              <img
+                src={h.hero.image}
+                alt={h.hero.imageAlt}
+                className="h-full w-full object-cover"
+              />
             </span>
             <span className="absolute -left-4 top-10 rounded-full bg-creme p-1 shadow-soft mobile:-left-2">
               <Stamp text={h.hero.stamps.top} />

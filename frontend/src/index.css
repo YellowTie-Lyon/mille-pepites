@@ -142,6 +142,31 @@ summary {
   cursor: pointer;
 }
 
+/* ---- Cookie hero : rotation pilotée par le défilement (CSS scroll-driven, sans JS) ---- */
+@keyframes mp-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes mp-float-soft {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+.cookie-scroll-spin {
+  animation: mp-float-soft 7s ease-in-out infinite;
+}
+@supports (animation-timeline: scroll()) {
+  .cookie-scroll-spin {
+    animation: mp-spin linear both;
+    animation-timeline: scroll(root block);
+  }
+}
+
 /* ---- Utilitaires ---- */
 .no-scrollbar {
   -ms-overflow-style: none;

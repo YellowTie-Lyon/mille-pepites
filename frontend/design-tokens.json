@@ -82,6 +82,7 @@
     "type": "CSS uniquement — aucune librairie JS d'animation",
     "scrollReveal": "fondu + montée 26px, 0.7s cubic-bezier(.22,1,.36,1) (composant Reveal, IntersectionObserver + classe .in-view)",
     "heroOnLoad": "révélation masquée ligne par ligne du H1 (translateY 115% -> 0, 0.95s, délais 140ms)",
+    "heroCookie": "cookie géant SVG qui tourne au défilement : animation-timeline: scroll(root) — CSS pur, sans JS ; repli @supports non supporté : balancement doux ±4°",
     "marquee": "défilement en boucle 42s linéaire, contenu dupliqué aria-hidden",
     "hover": "élévation -6px + zoom image 105% 0.7s + coin croqué qui apparaît (carte produit)",
     "reducedMotion": "@media prefers-reduced-motion : animations désactivées"

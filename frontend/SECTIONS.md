@@ -11,7 +11,7 @@ Chaque racine de section porte `data-section="nom-de-la-section"`. Toutes les do
 5. `site-footer` — bord croqué, menu, réseaux, newsletter, moyens de paiement, mentions (aucun titre Hn dans le footer)
 
 ## 1. Accueil `/`
-- `hero` — H1 masqué ligne par ligne, sous-titre, CTA « Commander » + « Composer ma box », cookie croqué en grand (coin morsure), note moyenne des avis, réassurance livraison dès le hero
+- `hero` — H1 masqué ligne par ligne, sous-titre, CTA « Commander » + « Composer ma box », cookie géant SVG croqué qui tourne au défilement (animation-timeline: scroll(), CSS pur, repli animé doux), pastille photo gourmande, note moyenne des avis, réassurance livraison dès le hero
 - `arguments-marquee` — bandeau défilant en boucle (CSS)
 - `edition-du-mois` — l'édition du mois comme un lancement (tampon « Édition limitée »)
 - `best-sellers` — 4 cartes produit (desktop 4 / tablette 2 / mobile 2)
