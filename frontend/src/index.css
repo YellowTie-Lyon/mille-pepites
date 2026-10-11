@@ -142,6 +142,19 @@ summary {
   cursor: pointer;
 }
 
+/* ---- Utilitaires ---- */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(46, 27, 18, 0.12);
+}
+
 /* ---- Champ de formulaire WooCommerce-like ---- */
 .mp-field {
   @apply w-full rounded-2xl border border-espresso/15 bg-offwhite px-4 py-3 text-[15px] text-espresso placeholder:text-espresso/40 transition-colors focus:border-cookie focus:outline-none;

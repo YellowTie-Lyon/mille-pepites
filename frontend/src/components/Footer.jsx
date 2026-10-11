@@ -79,17 +79,6 @@ export default function Footer() {
                 </span>
               ))}
             </div>
-            <nav aria-label="Liens légaux" className="flex flex-wrap gap-5">
-              {footer.legalLinks.map((l) => (
-                <Link
-                  key={l.label}
-                  to={l.href}
-                  className="text-xs transition-colors hover:text-caramel"
-                >
-                  {l.label}
-                </Link>
-              ))}
-            </nav>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function SectionHeading({
         </p>
       )}
       <h2
-        className={`font-title text-3xl font-semibold leading-[1.1] tracking-tight mobile:text-[28px] ${
+        className={`font-title text-4xl font-semibold leading-[1.08] tracking-tight mobile:text-3xl ${
           light ? "text-creme" : "text-espresso"
         }`}
       >

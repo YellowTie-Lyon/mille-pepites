@@ -5,7 +5,7 @@ Chaque racine de section porte `data-section="nom-de-la-section"`. Toutes les do
 
 ## Composants communs (toutes les pages)
 1. `promo-bar` — bandeau promo fin, fond espresso
-2. `site-header` — logo SVG, menu, recherche produits, compte, panier avec compteur ; transparent sur le hero de l'accueil puis fond crème au défilement ; menu mobile burger (details/summary)
+2. `site-header` — logo SVG, menu e-commerce avec icônes (Boutique avec méga-menu : catégories, toppings, édition du mois mise en scène ; Composer ma box ; Édition du mois ; Cadeaux), recherche produits, compte, panier avec compteur ; transparent sur le hero de l'accueil puis fond crème au défilement ; pages institutionnelles reléguées au footer ; menu mobile burger (details/summary)
 3. `cart-drawer` — mini-panier latéral (barre de progression livraison offerte, quantités, total)
 4. `notices` — notifications WooCommerce (succès / info / erreur)
 5. `site-footer` — bord croqué, menu, réseaux, newsletter, moyens de paiement, mentions (aucun titre Hn dans le footer)

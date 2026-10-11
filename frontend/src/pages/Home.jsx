@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -18,7 +19,9 @@ import SectionHeading from "../components/SectionHeading";
 import Faq from "../components/Faq";
 import NewsletterForm from "../components/NewsletterForm";
 import { BiteDivider, Pepite } from "../components/Bites";
+import { CookieMark } from "../components/Logo";
 import { home, getProduct, toppings } from "../mock/data";
+import { fmt } from "../utils";
 
 const ICONS = {
   Truck,
@@ -44,9 +47,15 @@ export default function Home() {
       {/* ================= HERO ================= */}
       <section
         data-section="hero"
-        className="relative -mt-[72px] overflow-hidden pb-16 pt-[calc(72px+56px)] mobile:-mt-16 mobile:pb-12 mobile:pt-[calc(64px+40px)]"
+        className="relative -mt-[76px] overflow-hidden pb-16 pt-[calc(76px+64px)] mobile:-mt-16 mobile:pb-12 mobile:pt-[calc(64px+40px)]"
       >
-        <div className="container-site grid items-center gap-12 tablet:gap-8 mobile:grid-cols-1 desktop:grid-cols-[1.05fr_0.95fr]">
+        <span
+          aria-hidden="true"
+          className="text-outline pointer-events-none absolute -top-2 right-4 hidden select-none font-title text-[150px] font-semibold italic leading-none desktop:block"
+        >
+          faits main
+        </span>
+        <div className="container-site relative grid items-center gap-12 tablet:gap-8 mobile:grid-cols-1 desktop:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p
               className="animate-popin flex items-center gap-2 text-xs font-bold uppercase tracking-[0.24em] text-cookie"
@@ -55,7 +64,7 @@ export default function Home() {
               <Pepite className="h-3.5 w-3.5 text-caramel" />
               {h.hero.eyebrow}
             </p>
-            <h1 className="mt-5 font-title text-[44px] font-semibold leading-[1.04] tracking-tight text-espresso tablet:text-4xl mobile:text-[36px]">
+            <h1 className="mt-5 font-title text-[60px] font-semibold leading-[1.02] tracking-tight text-espresso tablet:text-5xl mobile:text-[40px]">
               {h.hero.titleLines.map((line, i) => (
                 <span key={i} className="hero-line" style={{ "--d": `${180 + i * 140}ms` }}>
                   <span>
@@ -127,6 +136,10 @@ export default function Home() {
                 className="aspect-[4/5] w-full object-cover mobile:aspect-square"
               />
             </div>
+            <span className="absolute -bottom-10 -left-8 z-10 flex h-32 w-32 items-center justify-center rounded-full bg-offwhite shadow-card mobile:-bottom-8 mobile:-left-4 mobile:h-24 mobile:w-24">
+              <RotatingStamp />
+              <CookieMark className="relative h-10 w-10 mobile:h-7 mobile:w-7" />
+            </span>
             <span className="absolute -left-4 top-10 rounded-full bg-creme p-1 shadow-soft mobile:-left-2">
               <Stamp text={h.hero.stamps.top} />
             </span>
@@ -176,7 +189,7 @@ export default function Home() {
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-4">
               <p className="font-title text-4xl font-semibold text-caramel">
-                {edition.sale_price ?? edition.regular_price} €
+                {fmt(edition.sale_price ?? edition.regular_price)}
               </p>
               <Link
                 to={`/produit/${edition.slug}/`}
@@ -238,7 +251,10 @@ export default function Home() {
               align="center"
             />
           </Reveal>
-          <div className="mt-10 grid grid-cols-4 gap-6 tablet:grid-cols-2 mobile:grid-cols-2">
+          <div
+            className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4"
+            data-testid="toppings-strip"
+          >
             {toppingsGrid(h)}
           </div>
         </div>
@@ -545,9 +561,40 @@ export default function Home() {
   );
 }
 
+function RotatingStamp() {
+  const id = useId();
+  return (
+    <svg
+      viewBox="0 0 120 120"
+      aria-hidden="true"
+      className="animate-spin-slow absolute inset-0 h-full w-full"
+    >
+      <defs>
+        <path
+          id={id}
+          d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"
+          fill="none"
+        />
+      </defs>
+      <text
+        className="fill-espresso"
+        style={{ fontSize: "10.5px", fontWeight: 800, letterSpacing: "2.4px" }}
+      >
+        <textPath href={`#${id}`}>
+          CUIT À LA COMMANDE · FAIT MAIN EN FRANCE ·
+        </textPath>
+      </text>
+    </svg>
+  );
+}
+
 function toppingsGrid(h) {
   return toppings.map((t, i) => (
-    <Reveal key={t.slug} delay={i * 80}>
+    <Reveal
+      key={t.slug}
+      delay={i * 80}
+      className="w-[290px] shrink-0 snap-start tablet:w-[260px] mobile:w-[250px]"
+    >
       <Link
         to={`/boutique/?tag=${t.slug}`}
         data-testid={`topping-card-${t.slug}`}
