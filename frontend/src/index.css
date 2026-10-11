@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mp-espresso: #2e1b12;
+  --mp-cookie: #7a4a2a;
+  --mp-caramel: #c08552;
+  --mp-creme: #f6eee3;
+  --mp-sable: #e8d7bf;
+  --mp-offwhite: #fffbf5;
+  --mp-brique: #b5452f;
+  --mp-container: 1280px;
+  --mp-gutter: 24px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-creme font-body text-espresso antialiased;
+    font-optical-sizing: auto;
+  }
+  ::selection {
+    @apply bg-caramel/40 text-espresso;
+  }
+  :focus-visible {
+    outline: 2px solid var(--mp-cookie);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  img {
+    @apply select-none;
+  }
+}
+
+/* ---- Grain global (touche vintage) ---- */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E");
+  background-size: 240px 240px;
+}
+
+/* ---- Conteneur unique 1280 / 24 ---- */
+.container-site {
+  width: 100%;
+  max-width: calc(var(--mp-container) + var(--mp-gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--mp-gutter);
+}
+
+/* ---- Apparition au scroll (CSS uniquement) ---- */
+.rv {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--rvd, 0ms);
+}
+.rv.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Hero : révélation masquée ligne par ligne (on-load, CSS) ---- */
+@keyframes rise {
+  from {
+    transform: translateY(115%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.hero-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+}
+.hero-line > span {
+  display: inline-block;
+  transform: translateY(115%);
+  animation: rise 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--d, 0ms);
+  will-change: transform;
+}
+
+/* ---- Morsure nette en coin (mask CSS) ---- */
+.bite-tr {
+  -webkit-mask-image: radial-gradient(
+    circle at calc(100% - 16px) 16px,
+    transparent 0 24px,
+    #000 25px
+  );
+  mask-image: radial-gradient(
+    circle at calc(100% - 16px) 16px,
+    transparent 0 24px,
+    #000 25px
+  );
+}
+.bite-tr-lg {
+  -webkit-mask-image: radial-gradient(
+    circle at calc(100% - 30px) 30px,
+    transparent 0 44px,
+    #000 45px
+  );
+  mask-image: radial-gradient(
+    circle at calc(100% - 30px) 30px,
+    transparent 0 44px,
+    #000 45px
+  );
+}
+
+/* ---- Bord croqué entre sections (dents arrondies) ---- */
+.bitten-edge {
+  height: 18px;
+  background-color: var(--edge-color, #f6eee3);
+  -webkit-mask-image: radial-gradient(
+    circle 10px at 50% 0,
+    #000 98%,
+    transparent
+  );
+  mask-image: radial-gradient(circle 10px at 50% 0, #000 98%, transparent);
+  -webkit-mask-size: 34px 18px;
+  mask-size: 34px 18px;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+}
+
+/* ---- details / summary (accordéons, menu mobile) ---- */
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* ---- Champ de formulaire WooCommerce-like ---- */
+.mp-field {
+  @apply w-full rounded-2xl border border-espresso/15 bg-offwhite px-4 py-3 text-[15px] text-espresso placeholder:text-espresso/40 transition-colors focus:border-cookie focus:outline-none;
+}
+.mp-label {
+  @apply mb-1.5 block text-sm font-semibold text-espresso;
+}
+
+/* ---- Scrollbar discret ---- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mp-creme);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(122, 74, 42, 0.35);
+  border-radius: 8px;
+  border: 2px solid var(--mp-creme);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .rv {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-line > span {
+    transform: none;
+  }
+}

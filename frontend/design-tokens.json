@@ -1,0 +1,101 @@
+{
+  "name": "Mille Pépites — design tokens",
+  "version": "1.0.0",
+  "note": "Tokens alignés sur tailwind.config.js. Trois paliers uniquement : bureau (base, >1024px), tablette (<=1024px), mobile (<=767px).",
+  "colors": {
+    "espresso": "#2E1B12",
+    "cookie": "#7A4A2A",
+    "caramel": "#C08552",
+    "creme": "#F6EEE3",
+    "sable": "#E8D7BF",
+    "offwhite": "#FFFBF5",
+    "brique": "#B5452F",
+    "usage": {
+      "espresso": "textes, fonds sombres (footer, sections sombres)",
+      "cookie": "couleur primaire, boutons",
+      "caramel": "accent, survols, prix",
+      "creme": "fond principal",
+      "sable": "sections alternées",
+      "offwhite": "cartes",
+      "brique": "uniquement badges promo et alertes",
+      "wc-success": "#3E7C4F — notifications WooCommerce succès",
+      "wc-info": "#5C7A99 — notifications WooCommerce information"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "title": "Fraunces (Google Fonts, 400-700, italique disponible)",
+      "body": "Manrope (Google Fonts, 400-800)"
+    },
+    "scale": {
+      "h1": { "desktop": "44px / 1.04", "tablet": "36px", "mobile": "36px", "family": "title", "weight": 600, "rule": "un seul H1 par page" },
+      "h2": { "desktop": "30px / 1.1", "mobile": "28px", "family": "title", "weight": 600 },
+      "h3": { "desktop": "20px", "family": "title", "weight": 600 },
+      "h4": { "desktop": "17px", "family": "title", "weight": 600 },
+      "body": { "desktop": "15-16px / 1.6", "family": "body" },
+      "small": "13px",
+      "eyebrow": "12px, uppercase, letter-spacing 0.22em, weight 700"
+    }
+  },
+  "spacing": {
+    "scale": "4 / 8 / 12 / 16 / 20 / 24 / 32 / 40 / 48 / 56 / 64 / 80 px",
+    "sectionPadding": { "desktop": "80px", "mobile": "56px" },
+    "gutter": "24px horizontal (mobile comme bureau)"
+  },
+  "container": {
+    "maxWidth": "1280px",
+    "paddingX": "24px",
+    "cssClass": ".container-site"
+  },
+  "radius": {
+    "card": "24px",
+    "blob": "32px (visuels découpés)",
+    "pill": "999px (boutons, badges, champs ronds)",
+    "chip": "16px (vignettes, mini-visuels)"
+  },
+  "shadows": {
+    "soft": "0 2px 14px rgba(46,27,18,0.06)",
+    "card": "0 10px 30px -12px rgba(46,27,18,0.14)",
+    "lift": "0 22px 44px -16px rgba(46,27,18,0.22)",
+    "stamp": "0 0 0 1px rgba(46,27,18,0.10)"
+  },
+  "breakpoints": {
+    "bureau": "> 1024px (styles de base)",
+    "tablette": "<= 1024px (préfixe tablet:)",
+    "mobile": "<= 767px (préfixe mobile:)",
+    "colonnes": {
+      "boutique": { "bureau": 3, "tablette": 2, "mobile": 1 },
+      "best-sellers-produits-associes": { "bureau": 4, "tablette": 2, "mobile": 2 },
+      "toppings": { "bureau": 4, "tablette": 2, "mobile": 2 },
+      "formules": { "bureau": 4, "tablette": 2, "mobile": 1 },
+      "instagram": { "bureau": 6, "tablette": 3, "mobile": 3 },
+      "avis": { "bureau": 3, "tablette": 1, "mobile": 1 }
+    }
+  },
+  "motifs": {
+    "morsure": "coin de carte/visuel découpé en arc (mask radial CSS .bite-tr / .bite-tr-lg, cercle .bite-corner au survol de la carte produit), séparateurs de sections .bitten-edge (dents arrondies CSS)",
+    "pepite": "Puce SVG ellipse inclinée (composant Pepite) : eyebrows, puces de liste, séparateurs du bandeau défilant",
+    "grain": "texture bruit SVG fixe, opacité 5%, superposée au site",
+    "tampon": "badges ronds à double anneau (composant Stamp), légère rotation"
+  },
+  "motion": {
+    "type": "CSS uniquement — aucune librairie JS d'animation",
+    "scrollReveal": "fondu + montée 26px, 0.7s cubic-bezier(.22,1,.36,1) (composant Reveal, IntersectionObserver + classe .in-view)",
+    "heroOnLoad": "révélation masquée ligne par ligne du H1 (translateY 115% -> 0, 0.95s, délais 140ms)",
+    "marquee": "défilement en boucle 42s linéaire, contenu dupliqué aria-hidden",
+    "hover": "élévation -6px + zoom image 105% 0.7s + coin croqué qui apparaît (carte produit)",
+    "reducedMotion": "@media prefers-reduced-motion : animations désactivées"
+  },
+  "icons": "Lucide uniquement",
+  "accessibility": {
+    "contraste": "AA",
+    "focus": "outline 2px #7A4A2A, offset 3px",
+    "cibles": ">= 44px (h-11)",
+    "images": "textes alternatifs obligatoires"
+  },
+  "woocommerce": {
+    "routes": ["/boutique/", "/produit/nom-du-produit/", "/categorie-produit/cookies/", "/panier/", "/commande/", "/mon-compte/"],
+    "notices": { "success": "carte blanche bord gauche vert", "info": "bord gauche bleu-gris", "error": "bord gauche rouge brique" },
+    "produits": "mock/data.js — nom, slug, type (simple/variable/grouped), prix normal, prix promo, stock, descriptions, image, galerie, catégories, étiquettes, attributs (Allergènes, Poids, Format), note, avis, produits associés"
+  }
+}

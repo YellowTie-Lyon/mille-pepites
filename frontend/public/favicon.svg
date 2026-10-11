@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#2E1B12"/>
+  <mask id="bite"><rect width="64" height="64" fill="#fff"/><circle cx="56" cy="8" r="14" fill="#000"/></mask>
+  <circle cx="31" cy="35" r="21" fill="#7A4A2A" mask="url(#bite)"/>
+  <ellipse cx="24" cy="29" rx="3.2" ry="4.2" fill="#F6EEE3" transform="rotate(-20 24 29)"/>
+  <ellipse cx="36" cy="38" rx="3.2" ry="4.2" fill="#C08552" transform="rotate(15 36 38)"/>
+  <ellipse cx="26" cy="44" rx="2.9" ry="3.9" fill="#F6EEE3" transform="rotate(30 26 44)"/>
+  <ellipse cx="39" cy="27" rx="2.6" ry="3.6" fill="#F6EEE3" transform="rotate(-35 39 27)"/>
+  <ellipse cx="33" cy="49" rx="2.4" ry="3.2" fill="#C08552" transform="rotate(10 33 49)"/>
+</svg>

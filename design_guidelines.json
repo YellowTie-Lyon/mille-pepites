@@ -1,0 +1,274 @@
+{
+  "project_name": "Mille Pépites - Artisan Cookie E-Commerce",
+  "version": "1.0.0",
+  "brand_identity": {
+    "name": "Mille Pépites",
+    "tagline": "Biscuiterie Artisanale & Pépites Gourmandes",
+    "story": "Atelier parisien de cookies pur beurre d'Isigny AOP, pépites de chocolat Valrhona taillées au couteau, cœur coulant et croûte dorée caramélisée. Emballages kraft éco-conçus et boîtes métal collector réutilisables.",
+    "emotional_archetype": "Organic & Earthy meets French Culinary Luxury (Kraft paper texture, warm buttery golds, deep dark cocoa chocolate, natural linen and terracotta warmth).",
+    "design_target": "Mockup e-commerce React + Tailwind pixel-perfect, bâti avec une structure 100% transposable vers Elementor V4 Flexbox/Grid Containers + WooCommerce (Single product hooks, Cart drawer, Custom box builder, Variation selectors)."
+  },
+  "theme_strategy": {
+    "default_mode": "light",
+    "notes": "Les univers gourmands de biscuiterie artisanale nécessitent une dominante lumineuse, chaude et naturelle (farine, beurre chaud, papier kraft, lin) avec des touches sombres chocolat grand cru pour un contraste franc et appétissant. Jamais de fond blanc d'hôpital ni de noir stérile."
+  },
+  "color_palette": {
+    "canvas_base": "#FDFBF7",
+    "canvas_subtle": "#F7F2E9",
+    "kraft_paper": "#EAD8C3",
+    "kraft_border": "#D8C2A7",
+    "butter_warmth": "#F5E6CA",
+    "chocolate_dark": "#231815",
+    "chocolate_semi_sweet": "#3B261D",
+    "caramel_amber": "#C77D32",
+    "caramel_amber_hover": "#AD6720",
+    "terracotta_accent": "#B85D3B",
+    "fleur_de_sel": "#FAF8F5",
+    "card_bg": "#FFFFFF",
+    "card_border": "rgba(216, 194, 167, 0.45)",
+    "text_primary": "#231815",
+    "text_muted": "#6E5E52",
+    "text_light": "#968374",
+    "badge_gold": "#D4A373",
+    "success_green": "#436449"
+  },
+  "typography": {
+    "font_family_pairing": {
+      "headings": "Playfair Display, Cormorant Garamond, serif",
+      "body": "Plus Jakarta Sans, Inter, sans-serif",
+      "accent_editorial": "Cormorant Garamond, italic, serif",
+      "mono_stamps": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-[#231815] leading-[1.1]",
+      "section_h2": "text-2xl sm:text-3xl lg:text-4xl font-serif font-semibold tracking-tight text-[#231815]",
+      "card_h3": "text-xl sm:text-2xl font-serif font-medium text-[#231815]",
+      "eyebrow_badge": "text-xs uppercase tracking-[0.2em] font-sans font-bold text-[#C77D32]",
+      "body_base": "text-base font-sans text-[#6E5E52] leading-relaxed",
+      "price_tag": "text-xl font-serif font-bold text-[#231815]"
+    },
+    "rules": [
+      "Inter ou generic sans STRICTEMENT INTERDIT pour les H1 et H2.",
+      "Utiliser Playfair Display ou Cormorant Garamond pour toutes les titrailles et citations des maîtres biscuitiers.",
+      "Accompagner les titres d'un eyebrow en capitales espacées (tracking-[0.2em]) aux teintes caramel/ambre.",
+      "Sur Elementor V4 : correspondre à 'Typography Global: Heading H1 (Playfair Display 58px / line-height 1.15)', 'Body (Plus Jakarta Sans 16px)'."
+    ]
+  },
+  "curated_image_assets": {
+    "hero_section": {
+      "image_url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjaGlwJTIwY29va2llJTIwd2FybXxlbnwwfHx8fDE3OTE3MTI4ODJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt_text": "Close-up macro de cookies artisanaux dorés sortis du four, pépites de chocolat fondues et fleur de sel",
+      "role": "Hero banner visual focus & texture",
+      "treatment": "Pleine largeur ou bento asymétrique 7/12 avec bordure kraft douce (border-[#EAD8C3]), grain léger et badge 'Fournée du matin - 07h30'"
+    },
+    "edition_du_mois": {
+      "image_url": "https://images.unsplash.com/photo-1597733153203-a54d0fbc47de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjaGlwJTIwY29va2llJTIwd2FybXxlbnwwfHx8fDE3OTE3MTI4ODJ8MA&ixlib=rb-4.1.0&q=85",
+      "alt_text": "Cookie d'exception croqué avec pépites coulantes de chocolat noir et éclats de praliné noisette",
+      "role": "Édition Limitée du Mois (Le Cacao Grand Cru & Noisettes du Piémont)",
+      "treatment": "Carte vedette avec compte à rebours, badge 'Série Numérotée - 250 pièces' et sélecteur de précommande rapide"
+    },
+    "savoir_faire_atelier": {
+      "image_url": "https://images.unsplash.com/photo-1593265078328-097c382f2da8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHxiYWtlcnklMjBwYXN0cnklMjBjaGVmJTIwaGFuZHN8ZW58MHx8fHwxNzkxNzEyODgyfDA&ixlib=rb-4.1.0&q=85",
+      "alt_text": "Mains de l'artisan pâtissier pétrissant et façonnant la pâte à cookies sur plan de travail en inox",
+      "role": "Section Savoir-Faire & Ingrédients Nobles",
+      "secondary_image": "https://images.unsplash.com/photo-1506184341422-6cc152ae474b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxmcmVzaCUyMGJha2VkJTIwY29va2llcyUyMHBhcmNobWVudHxlbnwwfHx8fDE3OTE3MTI4ODZ8MA&ixlib=rb-4.1.0&q=85",
+      "treatment": "Duo d'images avec effet polaroid / papier d'emballage kraft décalé, callout des ingrédients certifiés AOP"
+    },
+    "boite_metal_cadeaux": {
+      "image_url": "https://images.unsplash.com/photo-1766425221306-4d44f4011d4a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxjb29raWUlMjB0aW4lMjBnaWZ0JTIwYm94JTIwa3JhZnR8ZW58MHx8fHwxNzkxNzEyODgyfDA&ixlib=rb-4.1.0&q=85",
+      "alt_text": "Boîtes cadeaux en papier kraft scellées au cachet de cire et ficelle de boucher artisanale",
+      "role": "Section Coffrets Cadeaux & Boîtes Métal Collector Réutilisables",
+      "secondary_image": "https://images.unsplash.com/photo-1764764138818-0b22ab4d4023?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxjb29raWUlMjB0aW4lMjBnaWZ0JTIwYm94JTIwa3JhZnR8ZW58MHx8fHwxNzkxNzEyODgyfDA&ixlib=rb-4.1.0&q=85",
+      "treatment": "Présentation haute couture avec option 'Graver un mot personnalisé' et choix de ruban"
+    },
+    "formules_box_band": {
+      "image_url": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxmcmVzaCUyMGJha2VkJTIwY29va2llcyUyMHBhcmNobWVudHxlbnwwfHx8fDE3OTE3MTI4ODZ8MA&ixlib=rb-4.1.0&q=85",
+      "alt_text": "Sélection généreuse de cookies dorés crousti-fondants disposés dans une corbeille d'atelier",
+      "role": "Bandeau Formules & Box personnalisées (Box 4, 8 ou 12 cookies)",
+      "treatment": "Interactive Box Configurator (Composez votre boîte sur-mesure avec jauge dynamique 4/8/12)"
+    },
+    "instagram_grid": [
+      {
+        "url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxjaG9jb2xhdGUlMjBjaGlwJTIwY29va2llJTIwd2FybXxlbnwwfHx8fDE3OTE3MTI4ODJ8MA&ixlib=rb-4.1.0&q=85",
+        "handle": "@millepepites_paris",
+        "caption": "À la sortie du four de 11h. Craquant dehors, cœur ruisselant dedans. #MillePepites"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1597733153203-a54d0fbc47de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxjaG9jb2xhdGUlMjBjaGlwJTIwY29va2llJTIwd2FybXxlbnwwfHx8fDE3OTE3MTI4ODJ8MA&ixlib=rb-4.1.0&q=85",
+        "handle": "@millepepites_paris",
+        "caption": "Praliné maison 100% noisettes françaises torréfiées. #ArtisanatFrancais"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506184341422-6cc152ae474b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxmcmVzaCUyMGJha2VkJTIwY29va2llcyUyMHBhcmNobWVudHxlbnwwfHx8fDE3OTE3MTI4ODZ8MA&ixlib=rb-4.1.0&q=85",
+        "handle": "@millepepites_paris",
+        "caption": "Sur papier sulfurisé d'antan, prêts pour l'envoi express 24h. #FreshBaked"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1766425221306-4d44f4011d4a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxjb29raWUlMjB0aW4lMjBnaWZ0JTIwYm94JTIwa3JhZnR8ZW58MHx8fHwxNzkxNzEyODgyfDA&ixlib=rb-4.1.0&q=85",
+        "handle": "@millepepites_paris",
+        "caption": "Nos boîtes scellées avec amour et cire végétale. #CadeauGourmand"
+      }
+    ]
+  },
+  "sections_breakdown_and_elementor_v4_mapping": {
+    "header_nav": {
+      "react_component": "Header.jsx",
+      "elementor_mapping": "Elementor V4 Header Template (Flex container direction-row, justify space-between, full-width with max-width 1280px)",
+      "specs": {
+        "background": "bg-[#FDFBF7]/90 backdrop-blur-md border-b border-[#EAD8C3]",
+        "branding": "Typo serif 'Mille Pépites' avec sous-titre 'Biscuiterie Parisienne'",
+        "nav_links": [
+          {"label": "La Carte Gourmande", "href": "#carte", "test_id": "nav-link-carte"},
+          {"label": "Édition du Mois", "href": "#edition-mois", "test_id": "nav-link-edition"},
+          {"label": "Composer sa Box", "href": "#formules", "test_id": "nav-link-box"},
+          {"label": "L'Atelier & Savoir-Faire", "href": "#atelier", "test_id": "nav-link-atelier"},
+          {"label": "Coffrets Cadeaux", "href": "#cadeaux", "test_id": "nav-link-cadeaux"}
+        ],
+        "actions": [
+          {"type": "cart_drawer_trigger", "test_id": "header-cart-button", "badge_count": "panier interactif"}
+        ]
+      }
+    },
+    "hero_section": {
+      "react_component": "HeroSection.jsx",
+      "elementor_mapping": "Elementor V4 Grid Container (8 cols visual + 4 cols order summary or 2 flex containers with 60% / 40% split)",
+      "specs": {
+        "headline": "Des cookies épais, crousti-fondants, dorés à cœur chaque matin.",
+        "subheadline": "Pur beurre d’Isigny AOP, chocolat noir Valrhona concassé minute et fleur de sel de Guérande. Expédiés chez vous le jour même de la cuisson.",
+        "cta_primary": {
+          "label": "Commander la Fournée Fraîche",
+          "test_id": "hero-cta-primary",
+          "class": "bg-[#C77D32] hover:bg-[#AD6720] text-white font-medium px-8 py-4 rounded-full shadow-md transition-all duration-300"
+        },
+        "cta_secondary": {
+          "label": "Composer ma Boîte (4, 8 ou 12)",
+          "test_id": "hero-cta-secondary",
+          "class": "border border-[#231815] text-[#231815] hover:bg-[#231815] hover:text-[#FDFBF7] px-6 py-4 rounded-full transition-all duration-300"
+        },
+        "social_proof": "★★★★★ 4.9/5 (1 420+ gourmands conquis) • Cuisson artisanale quotidienne"
+      }
+    },
+    "bandeau_valeurs": {
+      "react_component": "QualityRibbon.jsx",
+      "elementor_mapping": "Elementor V4 Icon Box Loop or Marquee Container (bg-[#F7F2E9], border-y border-[#EAD8C3])",
+      "items": [
+        "Beurre de baratte AOP Isigny",
+        "Chocolat Valrhona 70% concassé main",
+        "Farine de meule bio d'Île-de-France",
+        "Fleur de sel de Guérande",
+        "Expédié le jour même sous 24h"
+      ]
+    },
+    "edition_du_mois": {
+      "react_component": "EditionDuMois.jsx",
+      "elementor_mapping": "Elementor V4 Nested Container with WooCommerce Featured Product loop & dynamic countdown widget",
+      "title": "L'Éphémère du Mois de Juillet",
+      "cookie_name": "Le Gianduja Noir & Fleur de Sel Sauvage",
+      "description": "Une pâte au cacao noir intense, farcie d'un lingot coulant de Gianduja noisette du Piémont et parsemée de cristaux de sel croustillants.",
+      "price": "4,20 € l'unité / 15,90 € le pochon de 4",
+      "badge": "Édition Limitée - Fin de fournée dans 8 jours",
+      "action": "Ajouter au panier avec sélection de quantité"
+    },
+    "formules_box_band": {
+      "react_component": "BoxCustomizer.jsx",
+      "elementor_mapping": "Elementor V4 Container + WooCommerce Product Bundles / Composite Products replica",
+      "concept": "L'Expérience Box Mille Pépites : Choisissez le format de votre boîte (4, 8 ou 12 cookies) et remplissez-la par glisser-déposer ou clics directs sur les créations du chef.",
+      "box_options": [
+        {"id": "box-4", "name": "La Découverte", "count": 4, "price": "15,50 €", "tag": "Idéal solo ou duo"},
+        {"id": "box-8", "name": "La Gourmande", "count": 8, "price": "29,00 €", "tag": "La préférée des familles"},
+        {"id": "box-12", "name": "L'Atelier Festif", "count": 12, "price": "39,50 €", "tag": "Boîte métal offerte"}
+      ]
+    },
+    "carte_des_cookies": {
+      "react_component": "CookieMenu.jsx",
+      "elementor_mapping": "WooCommerce Archive Products Template with Elementor V4 Loop Grid (Cards with hover image swap, category filters, quick-add Ajax)",
+      "cookies": [
+        {
+          "id": "ck-classic",
+          "name": "Le Classique Tout Chocolat",
+          "desc": "Chocolat noir Guanaja 70%, vanille Bourbon de Madagascar et noisettes concassées.",
+          "price": "3,80 €",
+          "tags": ["Best-Seller", "Gooey"]
+        },
+        {
+          "id": "ck-caramel",
+          "name": "Le Caramel Coulant & Noix de Pécan",
+          "desc": "Cœur de caramel au beurre salé coulant maison et éclats de pécan caramélisées.",
+          "price": "4,00 €",
+          "tags": ["Cœur Coulant"]
+        },
+        {
+          "id": "ck-pistache",
+          "name": "La Pistache de Bronte & Chocolat Blanc",
+          "desc": "Pâte sablée infusée à la pistache pure et pépites fondantes Ivoire 35%.",
+          "price": "4,20 €",
+          "tags": ["Pâtissier"]
+        },
+        {
+          "id": "ck-noisette",
+          "name": "Le Praliné Noisette & Épeautre Bio",
+          "desc": "Farine d'épeautre rustique, praliné feuillantine croquant et chocolat au lait Jivara.",
+          "price": "3,90 €",
+          "tags": ["Rustique"]
+        }
+      ]
+    },
+    "savoir_faire_atelier": {
+      "react_component": "AtelierStory.jsx",
+      "elementor_mapping": "Elementor V4 Split Flexbox Container (Text with quote + Gallery with layered overlapping offsets)",
+      "pillars": [
+        {"title": "Pâte reposée 48 heures", "detail": "La maturation à froid permet aux arômes de beurre et de caramel naturel de se concentrer avant enfournement."},
+        {"title": "Pépites au couteau", "detail": "Nous ne choisissons pas de billes industrielles mais de vrais blocs découpés en morceaux irréguliers pour des poches de chocolat géantes."},
+        {"title": "Cuisson Flash à Haute Température", "detail": "Ce choc thermique garantit l'alchimie parfaite : une croûte extérieure friable et un cœur intact ultra-généreux."}
+      ]
+    },
+    "cadeaux_boite_metal": {
+      "react_component": "GiftSection.jsx",
+      "elementor_mapping": "Elementor V4 Hero Promo Container with WooCommerce Product Add-ons (custom greeting card + gift wrap toggle)",
+      "title": "Offrir Mille Pépites : La Boîte Métal Collector",
+      "description": "Boîte en fer blanc illustrée à la main, conçue pour être conservée et réutilisée. Livrée dans son emballage kraft brut, ruban de coton biologique et carte manuscrite de l'atelier.",
+      "cta": "Commander un Coffret Cadeau (32,00 €)"
+    },
+    "instagram_grid": {
+      "react_component": "InstagramFeed.jsx",
+      "elementor_mapping": "Elementor V4 Grid Container (4 columns on desktop, 2 on tablet, scrollable on mobile) with Instagram Widget or Custom Gallery"
+    },
+    "footer": {
+      "react_component": "Footer.jsx",
+      "elementor_mapping": "Elementor V4 Global Footer with 4-column layout, newsletter subscription with Mailchimp/WooCommerce webhook, legal notices & click-and-collect store info",
+      "atelier_address": "Atelier & Boutique : 18 Rue des Martyrs, 75009 Paris"
+    }
+  },
+  "interactive_features_to_implement": {
+    "cart_drawer": {
+      "description": "Tiroir coulissant panier avec récapitulatif des cookies choisis, jauge de livraison gratuite (offerte dès 45 €), et sélection de date de livraison souhaitée.",
+      "test_ids": ["cart-drawer-container", "cart-item-row", "cart-checkout-button", "cart-close-button"]
+    },
+    "box_builder_modal_or_section": {
+      "description": "Module interactif permettant à l'utilisateur d'ajouter unitairement des cookies dans sa boîte de 4, 8 ou 12 avec calcul instantané du prix et compteur de progression.",
+      "test_ids": ["box-size-selector-4", "box-size-selector-8", "box-size-selector-12", "box-progress-counter", "box-add-flavor-button", "box-finish-button"]
+    },
+    "flavor_detail_modal": {
+      "description": "Fiche cookie 'Gros plan & dégustation' avec conseils de réchauffage au four (3 min à 160°C pour retrouver le cœur coulant parfait), allergènes et composition.",
+      "test_ids": ["cookie-modal-container", "cookie-reheat-instructions", "cookie-modal-close-button"]
+    }
+  },
+  "elementor_v4_and_woocommerce_architecture_spec": {
+    "guide_for_wordpress_transfer": [
+      "1. CONTENEURS FLEXBOX & CSS GRID : Dans Elementor V4, activer impérativement les conteneurs Flexbox et la CSS Grid. Les classes React 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4' correspondent au widget Conteneur d'Elementor configuré en 'Type de conteneur : Grille'.",
+      "2. WOOCOMMERCE TEMPLATE HOOKS : Le sélecteur de box correspond au plugin 'WooCommerce Product Bundles' ou 'YITH Composite Products for WooCommerce'.",
+      "3. COULEURS GLOBALES ELEMENTOR : Configurer Palette 1 : #231815 (Chocolat Noir - Titres), Palette 2 : #C77D32 (Caramel - Boutons d'action), Palette 3 : #FDFBF7 (Arrière-plan principal), Palette 4 : #EAD8C3 (Bordure kraft / Lin).",
+      "4. TYPOGRAPHIES GLOBALES : 'Primaire' : Playfair Display (Serif), 'Secondaire' : Plus Jakarta Sans (Sans-serif), 'Accent' : Cormorant Garamond Italic.",
+      "5. TEXTURES : Les arrière-plans utilisent un motif subtil de grain kraft via une classe CSS additionnelle 'bg-kraft-texture' transposable via le panneau Styles Personnalisés d'Elementor."
+    ]
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": {
+    "rules": [
+      "Toutes les actions et boutons interactifs DOIVENT comporter un attribut data-testid explicite en kebab-case (ex: data-testid='hero-cta-primary', data-testid='cart-drawer-trigger').",
+      "Aucun bouton ou champ d'en-tête ne doit avoir de fond totalement transparent. Utiliser systématiquement un fond semi-opaque avec flou d'arrière-plan (bg-[#FDFBF7]/90 backdrop-blur-md).",
+      "Conserver l'ambiance authentique biscuiterie française : teintes beurre doux, chocolat noir, papier kraft et accents caramel ambré. BANNIR les couleurs fluo, les dégradés violets tech ou les bleus d'entreprise.",
+      "Le panier d'achat et le configurateur de Box doivent être entièrement fonctionnels en React (état local réactif, ajout/suppression, badge dynamique).",
+      "Soigner les détails de dégustation : mentionner les conseils de dégustation ('Réchauffer 2 min à 160°C pour un cœur dégoulinant') et la traçabilité des ingrédients (Beurre Isigny AOP, Sel de Guérande, Chocolat Valrhona)."
+    ]
+  }
+}
