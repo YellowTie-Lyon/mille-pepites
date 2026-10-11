@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import Reveal from "../components/Reveal";
 import SectionHeading from "../components/SectionHeading";
-import { BiteDivider, Pepite } from "../components/Bites";
+import { CurveTop, Pepite } from "../components/Bites";
 import { getProduct, giftsPage } from "../mock/data";
 
 export default function Gifts() {
@@ -40,10 +40,8 @@ export default function Gifts() {
             <ProductCard product={product} />
           </Reveal>
         </div>
-        <div className="mt-16">
-          <BiteDivider color="#E8D7BF" />
-        </div>
       </section>
+      <CurveTop color="#E8D7BF" />
 
       <section data-section="cadeaux-entreprises" className="bg-sable/70 py-20 mobile:py-12">
         <div className="container-site grid items-start gap-12 mobile:grid-cols-1 desktop:grid-cols-2">

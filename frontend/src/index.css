@@ -117,20 +117,16 @@
   );
 }
 
-/* ---- Bord croqué entre sections (dents arrondies) ---- */
-.bitten-edge {
-  height: 18px;
-  background-color: var(--edge-color, #f6eee3);
-  -webkit-mask-image: radial-gradient(
-    circle 10px at 50% 0,
-    #000 98%,
-    transparent
-  );
-  mask-image: radial-gradient(circle 10px at 50% 0, #000 98%, transparent);
-  -webkit-mask-size: 34px 18px;
-  mask-size: 34px 18px;
-  -webkit-mask-repeat: repeat-x;
-  mask-repeat: repeat-x;
+/* ---- Transition douce entre sections (courbe organique) ---- */
+.curve-top {
+  border-top-left-radius: 50% 56px;
+  border-top-right-radius: 50% 56px;
+}
+@media (max-width: 767px) {
+  .curve-top {
+    border-top-left-radius: 50% 40px;
+    border-top-right-radius: 50% 40px;
+  }
 }
 
 /* ---- details / summary (accordéons, menu mobile) ---- */

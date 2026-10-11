@@ -73,7 +73,8 @@
     }
   },
   "motifs": {
-    "morsure": "coin de carte/visuel découpé en arc (mask radial CSS .bite-tr / .bite-tr-lg, cercle .bite-corner au survol de la carte produit), séparateurs de sections .bitten-edge (dents arrondies CSS)",
+    "morsure": "coin de carte/visuel découpé en arc (mask radial CSS .bite-tr / .bite-tr-lg, cercle .bite-corner au survol de la carte produit)",
+    "separateur": "transition douce entre sections : courbe organique .curve-top (la couleur de la section suivante monte en dôme, écho du rond du cookie)",
     "pepite": "Puce SVG ellipse inclinée (composant Pepite) : eyebrows, puces de liste, séparateurs du bandeau défilant",
     "grain": "texture bruit SVG fixe, opacité 5%, superposée au site",
     "tampon": "badges ronds à double anneau (composant Stamp), légère rotation"

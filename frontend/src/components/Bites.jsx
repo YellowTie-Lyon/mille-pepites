@@ -18,16 +18,13 @@ export function Pepite({ className = "h-3 w-3" }) {
   );
 }
 
-/* Bord croqué : séparation entre deux sections, façon morsure */
-export function BiteDivider({ color = "#F6EEE3", flip = false, className = "" }) {
+/* Transition douce entre sections : courbe organique (écho du rond du cookie) */
+export function CurveTop({ color = "#F6EEE3", className = "" }) {
   return (
     <div
       aria-hidden="true"
-      className={`bitten-edge w-full ${className}`}
-      style={{
-        "--edge-color": color,
-        transform: flip ? "scaleY(-1)" : undefined,
-      }}
+      className={`curve-top -mt-14 h-14 w-full mobile:-mt-10 mobile:h-10 ${className}`}
+      style={{ backgroundColor: color }}
     />
   );
 }

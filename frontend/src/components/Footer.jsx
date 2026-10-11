@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import Logo from "./Logo";
-import { BiteDivider } from "./Bites";
+import { CurveTop } from "./Bites";
 import NewsletterForm from "./NewsletterForm";
 import { site } from "../mock/data";
 
@@ -11,7 +11,7 @@ export default function Footer() {
   const { footer } = site;
   return (
     <footer data-testid="site-footer" className="relative">
-      <BiteDivider color="#2E1B12" className="-mb-px" />
+      <CurveTop color="#2E1B12" className="-mb-px" />
       <div className="bg-espresso text-creme/70">
         <div className="container-site grid gap-12 pb-14 pt-16 tablet:grid-cols-2 mobile:grid-cols-1 desktop:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
           <div className="flex flex-col gap-5">

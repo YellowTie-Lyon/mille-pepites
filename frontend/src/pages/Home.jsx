@@ -18,7 +18,7 @@ import ProductCard from "../components/ProductCard";
 import SectionHeading from "../components/SectionHeading";
 import Faq from "../components/Faq";
 import NewsletterForm from "../components/NewsletterForm";
-import { BiteDivider, Pepite } from "../components/Bites";
+import { CurveTop, Pepite } from "../components/Bites";
 import { CookieMark } from "../components/Logo";
 import HeroCookie from "../components/HeroCookie";
 import { home, getProduct, toppings } from "../mock/data";
@@ -160,8 +160,8 @@ export default function Home() {
           items={h.marquee}
           className="bg-espresso py-4 text-creme/90"
         />
-        <BiteDivider color="#E8D7BF" />
       </section>
+      <CurveTop color="#E8D7BF" />
 
       {/* ================= ÉDITION DU MOIS ================= */}
       <section data-section="edition-du-mois" className="bg-sable py-20 mobile:py-14">
@@ -209,10 +209,8 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
-        <div className="container-site mt-16">
-          <BiteDivider color="#F6EEE3" flip />
-        </div>
       </section>
+      <CurveTop color="#F6EEE3" />
 
       {/* ================= BEST-SELLERS ================= */}
       <section data-section="best-sellers" className="py-20 mobile:py-14">
@@ -324,9 +322,9 @@ export default function Home() {
               </div>
             </div>
           </Reveal>
-          <BiteDivider color="#F6EEE3" />
         </div>
       </section>
+      <CurveTop color="#F6EEE3" />
 
       {/* ================= COMMENT ÇA MARCHE ================= */}
       <section data-section="comment-ca-marche" className="py-20 mobile:py-14">
@@ -405,10 +403,8 @@ export default function Home() {
             </span>
           </Reveal>
         </div>
-        <div className="container-site mt-16">
-          <BiteDivider color="#F6EEE3" flip />
-        </div>
       </section>
+      <CurveTop color="#F6EEE3" />
 
       {/* ================= AVIS CLIENTS ================= */}
       <section data-section="avis-clients" className="py-20 mobile:py-14">
@@ -477,10 +473,8 @@ export default function Home() {
             </div>
           </Reveal>
         </div>
-        <div className="container-site mt-16">
-          <BiteDivider color="#F6EEE3" />
-        </div>
       </section>
+      <CurveTop color="#F6EEE3" />
 
       {/* ================= INSTAGRAM ================= */}
       <section data-section="instagram" className="py-20 mobile:py-14">
