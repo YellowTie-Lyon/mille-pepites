@@ -1291,6 +1291,7 @@ export const home = {
     ],
     image: IMG.hero,
     imageAlt: "Cookie géant au chocolat encore tiède, cassé en deux",
+    cookieImage: "/images/hero-cookie.png",
     stamps: { top: "Cuit à la commande", bottom: "Fait main" },
   },
   marquee: [
